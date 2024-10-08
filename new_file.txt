@@ -1,0 +1,5 @@
+Hello World!
+
+This is my 3rd day of DevOps learning!
+
+I'm enjoying this learning process :)
