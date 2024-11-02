@@ -1,0 +1,15 @@
+#!/bin/bash
+
+read -p "Enter path to the directory : " directory
+read -p "Enter the file permission (eg. 544, 755, 777 ...) : " mode
+
+if [ ! -d "$directory" ]; then
+   echo "Directory does not exist";
+   exit1 
+fi
+
+chmod -R "$mode" "$directory"
+
+
+echo "Permission change to $mode for all file in $directory"
+

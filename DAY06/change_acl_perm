@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Ask for the file, user, and permissions
+read -p "Enter the file path: " file
+read -p "Enter the username: " username
+read -p "Enter the permission type (e.g., read, write, execute): " permission
+
+# Check if the file exists
+if [ ! -f "$file" ]; then
+  echo "File does not exist."
+  exit 1
+fi
+
+# Set the ACL permission for the user
+sudo setfacl -m u:"$username":"$permission" "$file"
+
+echo "ACL permission '$permission' granted to user '$username' on file '$file'."
+
+sudo getfacl "$file"

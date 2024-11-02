@@ -1,0 +1,7 @@
+# file: backups
+# owner: anirban
+# group: anirban
+user::rwx
+group::rwx
+other::rwx
+
