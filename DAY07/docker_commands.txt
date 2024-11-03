@@ -1,0 +1,34 @@
+# Docker installation on Ubuntu OS
+
+sudo apt update
+sudo apt install -y docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
+
+# Docker installation on CentOS 
+
+sudo yum update -y
+sudo yum install -y docker
+sudo systemctl start docker
+sudo systemctl enable docker
+
+# Difference between Systemctl and service commands -
+
+# Using systemctl
+sudo systemctl start docker
+sudo systemctl status docker
+
+# Using service
+sudo service docker start
+sudo service docker status
+
+
+# Using Journalctl for analysing logs
+
+sudo journalctl -u docker
+
+# Additional options:
+
+Real-time logs: sudo journalctl -u docker -f
+Filter by time: sudo journalctl -u docker --since "1 hour ago"
+Error-level logs: sudo journalctl -u docker -p err
