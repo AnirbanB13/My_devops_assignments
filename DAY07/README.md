@@ -1,5 +1,4 @@
 # Day 7 Task: Understanding Package Manager and Systemctl
-
 # What is a Package Manager in Linux?
 In simpler words, a package manager is a tool that allows users to install, remove, upgrade, configure, and manage software packages on an operating system. The package manager can be a graphical application like a software center or a command line tool like apt-get or pacman.
 
@@ -14,34 +13,35 @@ Package managers differ based on the packaging system but the same packaging sys
 For example, RPM has Yum and DNF package managers. For DEB, you have apt-get, aptitude command line-based package managers.
 
 # Tasks
-Install Docker:
+Install Docker and Jenkins:
 
-# Install Docker on your system from your terminal using package managers.
+Install Docker and Jenkins on your system from your terminal using package managers.
 Write a Blog or Article:
 
 Write a small blog or article on how to install these tools using package managers on Ubuntu and CentOS.
-Systemctl and Systemd
+
+# Systemctl and Systemd
 Systemctl is used to examine and control the state of the “systemd” system and service manager. Systemd is a system and service manager for Unix-like operating systems (most distributions, but not all).
 
 # Tasks
 Check Docker Service Status:
 
 Check the status of the Docker service on your system (ensure you have completed the installation tasks above).
-Manage   Service:
+Manage Jenkins Service:
 
-# Read About Systemctl vs. Service:
+Stop the Jenkins service and post before and after screenshots.
+Read About Systemctl vs. Service:
 
-# Read about the differences between the systemctl and service commands.
+Read about the differences between the systemctl and service commands.
 Example: systemctl status docker vs. service docker status.
 For reference, read this article.
 
 # Additional Tasks
 Automate Service Management:
 
-Write a script to automate the starting and stopping of Docker.
+Write a script to automate the starting and stopping of Docker and Jenkins services.
+Enable and Disable Services:
 
-# Enable and Disable Services:
-Use systemctl to enable Docker to start on boot and disable.
-
-# Analyze Logs:
-Use journalctl to analyze the logs of the Docker and   services. Post your findings.
+Use systemctl to enable Docker to start on boot and disable Jenkins from starting on boot.
+Analyze Logs:
+Use journalctl to analyze the logs of the Docker and Jenkins services. Post your findings.
